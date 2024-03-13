@@ -11,7 +11,9 @@
 
         table {
                 width: 500px;
-                border-collapse: collapse;                
+                border-collapse: collapse; 
+                position: relative;
+
               }
 
               td {
@@ -30,6 +32,11 @@
                 font-weight: bold;
                 background-color: whitesmoke;
               }
+              
+              thead > tr > th{
+                position: sticky;
+                top: -1px;
+              }        
 
               tbody > tr:nth-child(even) {
                 background-color: lightgrey;
