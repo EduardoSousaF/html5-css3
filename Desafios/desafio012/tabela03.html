@@ -17,30 +17,46 @@
         padding: 10px;
         text-align: center;
      }
+     thead {
+        background-color: gray;
+        color: white;
+     }
+     th{
+        background-color: rgba(128, 128, 128, 0.685);
+        color: white;
+     }
+
+     td.ex{
+        font-weight: bold;
+     }
+     td.hu {
+        font-weight: bold;
+     }
 </style>
 <body>
-    <h1>Exercicio Tables</h1>
     <table>
-        <caption>Notas</caption>
 <thead>
+    <tr>
     <th rowspan="2">Área</th>
     <th rowspan="2">Disciplinas</th>
     <th colspan="2">Notas</th>
     <th rowspan="2">Médias</th>
-    <td></td>
-</thead>
-<tbody>
+    </tr>
     <tr>
-        <th rowspan="5">Exatas</th>
-        <td>Matemática</td>
         <td>Nota 1</td>
         <td>Nota 2</td>
+        <td</td>
+    </tr>
+</thead>
+<tbody>
+     <tr>
+        <td class="ex" rowspan="4">Exatas</td>
+        <td>Matemática</td>
         <td>0,0</td>
         <td>0,0</td>
         <td>0,0</td>
         <tr>
         <td>Fisica</td>
-        <td>0,0</td>
         <td>0,0</td>
         <td>0,0</td>
         <td>0,0</td>
@@ -50,19 +66,37 @@
         <td>0,0</td>
         <td>0,0</td>
         <td>0,0</td>
-        <td>0,0</td>
         </tr>
         <tr>
         <td>Biologia</td>
         <td>0,0</td>
         <td>0,0</td>
         <td>0,0</td>
-        <td>0,0</td>
         </tr>
+
     </tr>
-
+    <tr>
+        <th colspan="4">Medias de Exatas</th>
+         <td>0,0</td>
+    </tr>
+<tr>
+<td class="hu" rowspan="3">Humanas</td>
+<tr>
+<td>História</td>
+<td>0,0</td>
+<td>0,0</td>
+<td>0,0</td>
+</tr>
+<td>Geografia</td>
+<td>0,0</td>
+<td>0,0</td>
+<td>0,0</td>
+</tr>
+<tr>
+    <th colspan="4">Média de Humanas</th>
+    <td>0,0</td>
+</tr>
 </tbody>
-
     </table>
 </body>
 </html>
