@@ -26,21 +26,24 @@
         color: white;
      }
 
-     td.ex{
+     th.ex{
         font-weight: bold;
+        background-color: white;
+        color: black;
      }
      td.hu {
         font-weight: bold;
+        background-color: white;
      }
 </style>
 <body>
     <table>
 <thead>
     <tr>
-    <th rowspan="2">Área</th>
-    <th rowspan="2">Disciplinas</th>
-    <th colspan="2">Notas</th>
-    <th rowspan="2">Médias</th>
+    <th scope="col" rowspan="2">Área</th>
+    <th scope="col" rowspan="2">Disciplinas</th>
+    <th scope="colgroup" colspan="2">Notas</th>
+    <th scope="col" rowspan="2">Médias</th>
     </tr>
     <tr>
         <td>Nota 1</td>
@@ -50,7 +53,7 @@
 </thead>
 <tbody>
      <tr>
-        <td class="ex" rowspan="4">Exatas</td>
+        <th scope="rowgroup" class="ex" rowspan="4">Exatas</th>
         <td>Matemática</td>
         <td>0,0</td>
         <td>0,0</td>
@@ -76,11 +79,11 @@
 
     </tr>
     <tr>
-        <th colspan="4">Medias de Exatas</th>
+        <th scope="row" colspan="4">Medias de Exatas</th>
          <td>0,0</td>
     </tr>
 <tr>
-<td class="hu" rowspan="3">Humanas</td>
+<td scope="rowgroup" class="hu" rowspan="3">Humanas</td>
 <tr>
 <td>História</td>
 <td>0,0</td>
@@ -93,7 +96,7 @@
 <td>0,0</td>
 </tr>
 <tr>
-    <th colspan="4">Média de Humanas</th>
+    <th scope="row" colspan="4">Média de Humanas</th>
     <td>0,0</td>
 </tr>
 </tbody>
