@@ -1,0 +1,40 @@
+@charset "UFT-8";
+
+/*Estilo para Tela*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: lightgray;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    background-color: rgb(104, 100, 100);
+    list-style-type: none;
+}
+     
+menu li{
+    background-color: rgb(73, 70, 70);
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+
+article {
+    width: 600px;
+    margin: auto;
+    display: block;
+}
